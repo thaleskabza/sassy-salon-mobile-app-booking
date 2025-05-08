@@ -1,4 +1,3 @@
-// models/booking_model.dart
 class BookingModel {
   final String id, customerName, serviceId, startTime, endTime, reference, status;
 
@@ -13,12 +12,23 @@ class BookingModel {
   });
 
   factory BookingModel.fromJson(Map<String, dynamic> json) => BookingModel(
-    id: json['id'],
-    customerName: json['customer_name'],
-    serviceId: json['service_id'],
-    startTime: json['start_time'],
-    endTime: json['end_time'],
-    reference: json['reference'],
-    status: json['status'],
-  );
+        id: json['id'],
+        customerName: json['customer_name'],
+        serviceId: json['service_id'],
+        startTime: json['start_time'],
+        endTime: json['end_time'],
+        reference: json['reference'],
+        status: json['status'],
+      );
+
+  // ✅ Add this for local caching
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'customer_name': customerName,
+        'service_id': serviceId,
+        'start_time': startTime,
+        'end_time': endTime,
+        'reference': reference,
+        'status': status,
+      };
 }

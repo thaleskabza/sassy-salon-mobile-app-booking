@@ -55,12 +55,13 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/images/background.jpg
-    - assets/sounds/click.wav
-    - assets/sounds/success.wav
+    - assets/images/booking_screen_background.jpg
+    - assets/images/view_bookings_background.jpg
+    - assets/images/welcome_screen_background.jpg
     - assets/images/ScutumCodicisLogo.png
-    - assets/images/welcome_background.jpg
-    - assets/images/favorites_background.jpg
+    - assets/sounds/click.wav
+    - assets/sounds/success_when_booking_is_done.ogg
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
