@@ -74,7 +74,7 @@ class _BookingScreenState extends State<BookingScreen> {
       );
 
       final booking = await ApiService.bookService(payload);
-      await player.play(AssetSource('sounds/success_when_booking_is_done.wav'));
+      await player.play(AssetSource('sounds/success_when_booking_is_done.ogg'));
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('✅ Booking confirmed: ${booking.reference}')),
@@ -182,7 +182,7 @@ class _BookingScreenState extends State<BookingScreen> {
                             icon: const Icon(Icons.check_circle),
                             label: const Text('Confirm Booking'),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.deepPurple,
+                              backgroundColor: const Color.fromARGB(255, 198, 194, 205),
                               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
                               textStyle: const TextStyle(fontSize: 16),
                             ),

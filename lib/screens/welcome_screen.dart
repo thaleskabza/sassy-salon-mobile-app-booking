@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                   children: [
                     ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.deepPurple,
+                        backgroundColor: const Color.fromARGB(255, 139, 129, 158),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         minimumSize: const Size(double.infinity, 48),
                       ),
